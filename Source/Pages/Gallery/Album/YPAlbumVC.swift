@@ -44,6 +44,7 @@ class YPAlbumVC: UIViewController {
                                                                    .foregroundColor: YPConfig.colors.albumTitleColor]
         navigationController?.navigationBar.barTintColor = YPConfig.colors.albumBarTintColor
         navigationController?.navigationBar.tintColor = YPConfig.colors.albumTintColor
+        navigationController?.navigationBar.isTranslucent = false
         setUpTableView()
         fetchAlbumsInBackground()
     }
