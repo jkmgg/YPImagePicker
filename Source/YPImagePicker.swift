@@ -25,6 +25,9 @@ open class YPImagePicker: UINavigationController {
         _didFinishPicking = completion
     }
 
+    public func stopCamera() {
+        self.picker.stopCurrentCamera()
+    }
     /// Get a YPImagePicker instance with the default configuration.
     public convenience init() {
         self.init(configuration: YPImagePickerConfiguration.shared)
